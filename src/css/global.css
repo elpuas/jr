@@ -1,0 +1,4 @@
+.wp-site-blocks {
+    width: var(--wp--style--global--content-size);
+    margin: 0 auto;
+}

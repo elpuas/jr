@@ -1,0 +1,202 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"border": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true
+		},
+		"color": {
+			"background": true,
+			"custom": false,
+			"customDuotone": false,
+			"customGradient": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"duotone": [],
+			"gradients": [],
+			"link": true,
+			"palette": [
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"color": "#FF883E"
+				},
+				{
+					"name": "Black",
+					"slug": "black",
+					"color": "#000000"
+				},
+				{
+					"name": "White",
+					"slug": "white",
+					"color": "#FFFFFF"
+				},
+				{
+					"name": "Secondary",
+					"slug": "secondary",
+					"color": "#F1F1F1"
+				},
+				{
+					"name": "Tertiary",
+					"slug": "tertiary",
+					"color": "#233145"
+				}
+			],
+			"text": true
+		},
+		"layout": {
+			"contentSize": "1024px",
+			"wideSize": "1200px"
+		},
+		"spacing": {
+			"blockGap": true,
+			"margin": true,
+			"padding": true,
+			"units": [
+				"px",
+				"rem"
+			]
+		},
+		"typography": {
+			"fluid": true,
+			"customFontSize": false,
+			"dropCap": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "MontserratAlternates",
+					"name": "Montserrat Alternates",
+					"slug": "montserrat-alternates",
+					"fontFace": [
+						{
+							"fontFamily": "Montserrat Alternates Regular",
+							"fontStyle": "normal",
+							"fontWeight": "normal",
+							"src": [
+								"file:./src/fonts/MontserratAlternates-Regular.ttf"
+							]
+						},
+						{
+							"fontFamily": "Montserrat Alternates Italic",
+							"fontStyle": "normal",
+							"fontWeight": "normal",
+							"src": [
+								"file:./src/fonts/MontserratAlternates-Italic.ttf"
+							]
+						},
+						{
+							"fontFamily": "Montserrat Alternates Bold",
+							"fontStyle": "normal",
+							"fontWeight": "normal",
+							"src": [
+								"file:./src/fonts/MontserratAlternates-Bold.ttf"
+							]
+						},
+						{
+							"fontFamily": "Manjari",
+							"fontStyle": "normal",
+							"fontWeight": "normal",
+							"src": [
+								"file:./src/fonts/Manjari-Regular.woff"
+							]
+						},
+						{
+							"fontFamily": "Manjari Bold",
+							"fontStyle": "normal",
+							"fontWeight": "normal",
+							"src": [
+								"file:./src/fonts/Manjari-Bold.woff"
+							]
+						}
+					]
+				}
+			],
+			"fontSizes": [
+				{
+					"slug": "size-14",
+					"size": "14px",
+					"name": "Tiny"
+				},
+				{
+					"slug": "size-16",
+					"size": "16px",
+					"name": "Small"
+				},
+				{
+					"slug": "size-18",
+					"size": "18px",
+					"name": "Normal"
+				},
+				{
+					"slug": "size-20",
+					"size": "18px",
+					"name": "Medium",
+					"fluid": {
+						"min": "18px",
+						"max": "20px"
+					}
+				},
+				{
+					"slug": "size-max-36",
+					"size": "24px",
+					"name": "Large",
+					"fluid": {
+						"min": "24px",
+						"max": "36px"
+					}
+				},
+				{
+					"slug": "size-max-60",
+					"size": "30px",
+					"name": "Extra Large",
+					"fluid": {
+						"min": "30px",
+						"max": "60px"
+					}
+				}
+			],
+			"fontStyle": true,
+			"fontWeight": true,
+			"letterSpacing": true,
+			"lineHeight": true,
+			"textDecoration": true,
+			"textTransform": true
+		},
+		"blocks": {
+			"core/paragraph": {},
+			"core/button": {}
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--secondary)",
+			"text": "var(--wp--preset--color--tertiary)"
+		},
+		"spacing": {
+			"blockGap": "32px"
+		}
+	},
+	"typography": {},
+	"elements": {},
+	"blocks": {
+		"core/heading": {},
+		"core/paragraph": {},
+		"core/list": {},
+		"core/button": {}
+	},
+	"customTemplates": [],
+	"templateParts": [
+		{
+			"name": "header",
+			"title": "Header",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "Footer",
+			"area": "footer"
+		}
+	]
+}
