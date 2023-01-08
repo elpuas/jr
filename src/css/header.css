@@ -1,1 +1,11 @@
-header {}
+.wp-block-template-part header {
+    padding: 16px 24px;
+}
+
+.wp-block-template-part header {}
+
+.wp-block-template-part header .wp-block-columns {}
+
+.wp-block-template-part header .wp-block-columns .wp-block-column.is-layout-flex {
+    justify-content: space-between;
+}

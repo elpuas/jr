@@ -22,7 +22,6 @@ function scripts() {
 				'wp-i18n',
 				'wp-blocks',
 				'wp-dom-ready',
-				'wp-edit-post',
 			], // phpcs:ignore
 		];
 

@@ -2,6 +2,15 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 2,
 	"settings": {
+		"custom": {
+			"w" : {
+				"full": "100vw",
+				"half": "calc(var(--wp--style--global--content-size) / 2)"
+			},
+			"img" : {
+				"grayscale": "contrast(1.1) grayscale(1)"
+			}
+		},
 		"border": {
 			"color": true,
 			"radius": true,
@@ -17,7 +26,7 @@
 			"defaultPalette": false,
 			"duotone": [],
 			"gradients": [],
-			"link": true,
+			"link": false,
 			"palette": [
 				{
 					"name": "Primary",
@@ -66,7 +75,7 @@
 			"dropCap": true,
 			"fontFamilies": [
 				{
-					"fontFamily": "MontserratAlternates",
+					"fontFamily": "\"Montserrat Alternates\", sans-serif",
 					"name": "Montserrat Alternates",
 					"slug": "montserrat-alternates",
 					"fontFace": [
@@ -80,7 +89,7 @@
 						},
 						{
 							"fontFamily": "Montserrat Alternates Italic",
-							"fontStyle": "normal",
+							"fontStyle": "italic",
 							"fontWeight": "normal",
 							"src": [
 								"file:./src/fonts/MontserratAlternates-Italic.ttf"
@@ -89,24 +98,24 @@
 						{
 							"fontFamily": "Montserrat Alternates Bold",
 							"fontStyle": "normal",
-							"fontWeight": "normal",
+							"fontWeight": "700",
 							"src": [
 								"file:./src/fonts/MontserratAlternates-Bold.ttf"
 							]
-						},
+						}
+					]
+				},
+				{
+					"fontFamily": "Manjari",
+					"name": "Manjari",
+					"slug": "manjari",
+					"fontFace": [
 						{
 							"fontFamily": "Manjari",
 							"fontStyle": "normal",
-							"fontWeight": "normal",
+							"fontWeight": "700",
 							"src": [
-								"file:./src/fonts/Manjari-Regular.woff"
-							]
-						},
-						{
-							"fontFamily": "Manjari Bold",
-							"fontStyle": "normal",
-							"fontWeight": "normal",
-							"src": [
+								"file:./src/fonts/Manjari-Bold.woff2",
 								"file:./src/fonts/Manjari-Bold.woff"
 							]
 						}
@@ -157,8 +166,8 @@
 					}
 				}
 			],
-			"fontStyle": true,
-			"fontWeight": true,
+			"fontStyle": false,
+			"fontWeight": false,
 			"letterSpacing": true,
 			"lineHeight": true,
 			"textDecoration": true,
@@ -176,15 +185,57 @@
 		},
 		"spacing": {
 			"blockGap": "32px"
-		}
-	},
-	"typography": {},
-	"elements": {},
-	"blocks": {
-		"core/heading": {},
-		"core/paragraph": {},
-		"core/list": {},
-		"core/button": {}
+		},
+		"typography": {
+			"fontSize": "var(--wp--preset--font-size--normal)",
+			"fontFamily": "var(--wp--preset--font-family--montserrat-alternates)",
+			"fontWeight": "var(--wp--preset--font-weight--normal)",
+			"lineHeight": "1.5"
+		},
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--manjari)",
+					"fontSize": "var(--wp--preset--font-size--size-max-60)"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--manjari)",
+					"fontSize": "var(--wp--preset--font-size--size-max-36)"
+				}
+			},
+			"link":{
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				},
+				":hover": {
+					"color": {
+						"text": "#ffb383"
+					}
+				}
+			}
+		},
+		"blocks": {
+			"core/heading": {},
+			"core/paragraph": {
+				"elements": {
+					"link": {
+						"color": {
+								"text": "var(--wp--preset--color--primary)"
+						}
+					}
+				},
+				"color": {
+					"text": "var(--wp--preset--color--tertiary)"
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--size-18)"
+				}
+			},
+			"core/list": {}
+		},
+		"css": "body { background-color: var(--wp--preset--color--secondary);} .alignfull { margin: 0 calc(-50vw + 50%); width:var(--wp-custom-w-full); max-width:var(--wp-custom-w-full)} .wp-block-post-content, .wp-block-post-title { max-width: var(--wp--style--global--content-size); margin: 0 auto;} .has-drop-cap:not(:focus):first-letter { font-size: 7em; background: var(--wp--preset--color--primary); padding-top: 10px; padding-bottom: 4px;} .is-image-grayscale img { filter: var(--wp--custom--img--grayscale); }"
 	},
 	"customTemplates": [],
 	"templateParts": [
