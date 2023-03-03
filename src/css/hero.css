@@ -4,6 +4,6 @@
     }
 
     .home .wp-site-blocks .wp-block-cover .wp-block-cover__image-background {
-        object-position: 10%;
+        object-position: 11% 45% !important;
     }
 }
