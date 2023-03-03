@@ -1,5 +1,75 @@
-/* .alignfull {
-    margin: 0 calc(50% - 50vw);
-	max-width: 100vw;
-	width: 100vw;
-} */
+.wp-block-post-content,
+.wp-block-post-title {
+	max-width: var(--wp--style--global--content-size);
+	margin: 0 auto;
+}
+
+body {
+	background-color: var(--wp--preset--color--gray);
+}
+
+.alignfull {
+	margin: 0 calc(-50vw + 50%);
+	width:var(--wp-custom-w-full);
+	max-width:var(--wp-custom-w-full)
+}
+
+h1,
+h2,
+.wp-block-heading {
+	background: var(--wp--preset--gradient--gradient-blue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.has-drop-cap:not(:focus):first-letter {
+	font-size: 7em; background: var(--wp--preset--color--primary); padding-top: 10px; padding-bottom: 4px;
+}
+
+.is-image-grayscale img {
+	filter: var(--wp--custom--img--grayscale);
+}
+
+.has-grid-layout {
+	display: grid;
+	grid-template-columns: repeat(12,1fr);
+	gap: 16px;
+	height: 100%;
+}
+
+body .is-layout-flow.has-grid-layout > * {
+	margin-top: 0;
+	margin-block-start: 0;
+}
+
+.has-grid-layout > * {
+	grid-column: span 6 / span 6;
+}
+
+.has-grid-layout > * > * {
+	height: 100%;
+}
+
+body .is-layout-flow.has-grid-layout .wp-block-post-excerpt {
+	margin-block-start: 0;
+}
+
+.has-grid-layout .wp-block-post-excerpt p {
+	font-size: var(--wp--preset--font-size--size-14);
+}
+
+.jr-post-patterns section {
+	height: 100%;
+}
+
+@media only screen and ( max-width: 600px ) {
+	.has-grid-layout {
+		grid-template-columns: 1fr;
+	}
+
+	.has-grid-layout > * {
+		grid-column: span 1 / span 1;
+	}
+}
+
+.has-grid-layout .wp-block-columns { margin-bottom: 0;}

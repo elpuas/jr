@@ -12,26 +12,16 @@
 // Path: themes/jr/patterns/jr-hero.php
 ?>
 
-<!-- wp:group {"tagName":"section","backgroundColor":"black","className":"alignfull","layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull has-black-background-color has-background"><!-- wp:columns -->
-    <div class="wp-block-columns"><!-- wp:column -->
-        <div class="wp-block-column"><!-- wp:image {"id":30,"sizeSlug":"large","linkDestination":"none","className":"is-image-grayscale"} -->
-            <figure class="wp-block-image size-large is-image-grayscale"><img src="/wp-content/uploads/2023/01/3b052386-f618-426a-8ed8-4a269f7ac9d5-682x1024.webp" alt="" class="wp-image-30" /></figure>
-            <!-- /wp:image -->
-        </div>
-        <!-- /wp:column -->
+<!-- wp:cover {"url":"http://jr.local/wp-content/uploads/2023/03/cover-image-black-jpg.webp","id":83,"dimRatio":0,"overlayColor":"gray","focalPoint":{"x":0.11,"y":0.45},"minHeight":661,"minHeightUnit":"px","templateLock":"all","lock":{"move":true,"remove":true}} -->
+<div class="wp-block-cover" style="min-height:661px"><span aria-hidden="true" class="wp-block-cover__background has-gray-background-color has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-83" alt="" src="http://jr.local/wp-content/uploads/2023/03/cover-image-black-jpg.webp" style="object-position:11% 45%" data-object-fit="cover" data-object-position="11% 45%"/><div class="wp-block-cover__inner-container"><!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"layout":{"type":"constrained"}} -->
+<div class="wp-block-column"></div>
+<!-- /wp:column -->
 
-        <!-- wp:column {"verticalAlignment":"center"} -->
-        <div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"textColor":"white"} -->
-            <h2 class="wp-block-heading has-white-color has-text-color">Godfather ipsum dolor sit amet. Te salut, Don Corleone. </h2>
-            <!-- /wp:heading -->
-
-            <!-- wp:paragraph {"dropCap":true,"textColor":"white"} -->
-            <p class="has-drop-cap has-white-color has-text-color">Don't ever give an order like that again. Not while I'm alive. I want your answer and the money by noon tomorrow. And one more thing. Don't you contact me again, ever. </p>
-            <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:column -->
-    </div>
-    <!-- /wp:columns -->
-</section>
-<!-- /wp:group -->
+<!-- wp:column {"layout":{"type":"constrained"}} -->
+<div class="wp-block-column"><!-- wp:heading {"level":1,"style":{"typography":{"textTransform":"uppercase"}},"textColor":"primary","fontFamily":"eveleth-clean"} -->
+<h1 class="wp-block-heading has-primary-color has-text-color has-eveleth-clean-font-family" style="text-transform:uppercase">Vision Humanista de un Futuro Innovador</h1>
+<!-- /wp:heading --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div></div>
+<!-- /wp:cover -->

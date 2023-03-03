@@ -1,0 +1,15 @@
+.c-accordion__title:after {
+    color: var(--wp--preset--color--secondary);
+    content: "+";
+    font-weight: 600;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.c-accordion__title--button:focus,
+.c-accordion__title--button:hover {
+    background-color: var(--wp--preset--color--tertiary);
+    color: white;
+}
