@@ -13,3 +13,12 @@
     background-color: var(--wp--preset--color--tertiary);
     color: white;
 }
+
+@media (max-width: 900px) {
+    .home-faq {
+        padding: 0 16px;
+    }
+    .home-faq .wp-block-columns .wp-block-column {
+        margin-bottom: 32px;
+    }
+}

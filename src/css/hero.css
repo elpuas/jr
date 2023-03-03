@@ -1,0 +1,5 @@
+@media (max-width: 900px) {
+    .home .wp-site-blocks .wp-block-cover {
+        align-items: flex-end;
+    }
+}
