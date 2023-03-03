@@ -2,4 +2,8 @@
     .home .wp-site-blocks .wp-block-cover {
         align-items: flex-end;
     }
+
+    .home .wp-site-blocks .wp-block-cover .wp-block-cover__image-background {
+        object-position: 10%;
+    }
 }
