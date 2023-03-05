@@ -6,4 +6,19 @@
     .home .wp-site-blocks .wp-block-cover .wp-block-cover__image-background {
         object-position: 11% 45% !important;
     }
+
+    .home .wp-site-blocks .wp-block-cover .wp-block-cover__inner-container .wp-block-columns {
+        margin-bottom: 0;
+    }
+
+    .home .wp-site-blocks .wp-block-cover .wp-block-cover__inner-container .wp-block-columns .wp-block-column p {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1240px) {
+    .home .wp-site-blocks .wp-block-cover .wp-block-cover__image-background {
+        object-position: top left !important;
+        object-fit: contain;
+    }
 }

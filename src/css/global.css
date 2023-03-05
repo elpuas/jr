@@ -62,7 +62,7 @@ body .is-layout-flow.has-grid-layout .wp-block-post-excerpt {
 	height: 100%;
 }
 
-@media only screen and ( max-width: 600px ) {
+@media only screen and ( max-width: 900px ) {
 	.has-grid-layout {
 		grid-template-columns: 1fr;
 	}
@@ -73,3 +73,13 @@ body .is-layout-flow.has-grid-layout .wp-block-post-excerpt {
 }
 
 .has-grid-layout .wp-block-columns { margin-bottom: 0;}
+
+@media only screen and ( max-width: 900px ) {
+	.has-grid-layout .wp-block-columns {
+		margin-bottom: 0;
+	}
+
+	.wp-block-post-content .wp-block-spacer {
+		height: 50px !important;
+	}
+}
